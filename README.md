@@ -18,6 +18,7 @@ Thank you Mr. Xensik for always providing cutting edge CoD GSC analysis.
 
 
 I would also like to express my sincere gratitude to Mr. ATE47, who has released features such as the asset pool and has diligently researched and disclosed information about new CoD GSC titles such as MWIII and BO6.
+- Asset Pool
 
 
 Thank you as always, I support you all.
