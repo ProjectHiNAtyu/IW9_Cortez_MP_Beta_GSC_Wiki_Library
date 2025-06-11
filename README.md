@@ -65,7 +65,6 @@ The following items are currently completed:
 - Official GSCBIN Dump Data
 - Official GSC Source Decompiled Data
 - GSC Loader ( Custom GSC Injector / GSCBIN Dumper / GSC Mod Menu / Real Time Editing ) * unfinished...
-- gsc-tool * unfinished...
 - GSC Mod Menu - Project HiNAtyu * unfinished...
 
 
@@ -91,16 +90,38 @@ HiNAtyu does not accept questions regarding the tool.
 
 Please direct your questions to xensik.
 
+Please download and use the latest version of the release file for gsc-tool from xensik's official repository.
+
+If there is demand in the future, I may rework the gsc-tool for the 1.38 build, but for now I guarantee it will work with the official version of gsc-tool.
+
 https://github.com/xensik/gsc-tool
 
 
-and Please use my own tweaked version of gsc-tool for this build.
+----------
 
-Regarding the GSC compiler and decompiler functions, many of the instructions are incorrect because we have not analyzed all of the hash tokens.
 
-Since I play MWII at Retail, I don't intend to make many modifications to the gsc-tool for the Beta build.
+[ Custom GSC ( gsc-tool ) ]
 
-If you want to seriously create GSC for the Beta build, please modify the gsc-tool's hash tokens on your own
+
+< dump >
+
+* A "GSCBIN" folder containing the gscbin for iw9 needs to be placed in the same directory hierarchy as gsc-tool.exe.
+
+gsc-tool -m decomp -g iw9 -s pc GSCBIN
+
+
+< compile >
+
+* A folder containing the custom GSC source for iw9 needs to be placed in the same directory hierarchy as gsc-tool.exe.
+
+gsc-tool -m comp -g iw9 -s pc YourCustomGSCFolder
+
+
+You are free to modify the GSC Mod Menu source code I released.
+
+However, I will not provide explanations on how to modify GSC, coding methods, or basic coding knowledge.
+
+Please figure it out on your own.
 
 
 ----------
@@ -170,34 +191,3 @@ This will help facilitate the development of new features and fixes.
 - Ko-fi : https://ko-fi.com/hinatyustudio
 - BTC : 32J66dfWi9dqqWHS2RYR9rFCUNBL88vgUR
 - ETH : 0xaE5D5b3e8E865B2bA676a24eF41d5f4CBD315978.
-
-
-----------
-
-
-[ Custom GSC ( gsc-tool ) ]
-
-
-< dump >
-
-* A "GSCBIN" folder containing the gscbin for iw9 needs to be placed in the same directory hierarchy as gsc-tool_iw9beta.exe.
-
-gsc-tool_iw9beta -m decomp -g iw9 -s pc GSCBIN
-
-
-< compile >
-
-* A folder containing the custom GSC source for iw9 needs to be placed in the same directory hierarchy as gsc-tool_iw9beta.exe.
-
-gsc-tool_iw9beta -m comp -g iw9 -s pc YourCustomGSCFolder
-
-
-You are free to modify the GSC Mod Menu source code I released.
-
-However, I will not provide explanations on how to modify GSC, coding methods, or basic coding knowledge.
-
-Please figure it out on your own.
-
-Currently, the following GSC functions and tokens can be used.
-
-All other commands are almost always incorrect and may cause a crash.
