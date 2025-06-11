@@ -32,13 +32,74 @@ Thank you as always, I support you all.
 - Game title : Call of Duty Modern Warfare II
 - Game code : IW9 / CoD19 / MW22 / MWII / MW2022 / CoD:MWII / Cortez
 - Game release year : 2022
-- Build version : Public Beta ()
+- Build version : Public Beta ( Version )
 - Platform : PC ( BattleNet )
+- Application environment : PC ( Windows 10 , Windows 11 )
 - Product type: GSC Loader ( GSC Injector / GSC Dumper / GSC Mod Menu / Real Time Editing )
 - Custom injector support : MP ( Multiplayer )
 - GSC Mod Menu title : Project HiNAtyu
 - GSC creator : HiNAtyu
 - Mod Menu support : MP ( Multiplayer )
+
+
+----------
+
+
+[ Video ]
+
+
+If you’d like to learn more about this GSC Mod Menu, please check out the YouTube video below.
+
+coming soon...
+
+
+----------
+
+
+[ Implemented ]
+
+
+The following items are currently completed:
+
+- Official GSCBIN Dump Data
+- Official GSC Source Decompiled Data
+- GSC Loader ( Custom GSC Injector / GSCBIN Dumper / GSC Mod Menu / Real Time Editing ) * unfinished...
+- gsc-tool * unfinished...
+- GSC Mod Menu - Project HiNAtyu * unfinished...
+
+
+----------
+
+
+< GSC Loader - How to use >
+
+
+For detailed operation instructions, You can read it by pressing various buttons after launching the Loader application.
+Or read the included readme.txt
+
+
+----------
+
+
+< gsc-tool >
+
+
+This app is a command-line tool operated via cmd.
+
+HiNAtyu does not accept questions regarding the tool.
+
+Please direct your questions to xensik.
+
+https://github.com/xensik/gsc-tool
+
+
+and Please use my own tweaked version of gsc-tool for this build.
+
+Regarding the GSC compiler and decompiler functions, many of the instructions are incorrect because we have not analyzed all of the hash tokens.
+
+Since I play MWII at Retail, I don't intend to make many modifications to the gsc-tool for the Beta build.
+
+If you want to seriously create GSC for the Beta build, please modify the gsc-tool's hash tokens on your own
 
 
 ----------
@@ -85,3 +146,57 @@ Thank you as always, I support you all.
 * After using this software, be sure to restart your PC before playing other games.
 * If you shut down your PC or unplug and plug the power cord, the system will not be initialized, increasing the risk of being banned, so be sure to restart your PC.
 
+
+----------
+
+
+[ Promotion ]
+
+
+- Discord : hinatapoko
+- Twitter 1 (Main) : https://x.com/KonataGIF
+- Twitter 2 (Sub) : https://x.com/H1NAtyu
+- YouTube : HiNAtyu Studio ( https://www.youtube.com/@hinatyuproject/featured )
+
+
+I’d be very happy if you could follow, subscribe, like, or comment on my various SNS accounts. 
+
+If you like my work, I'd be happy if you could sponsor or donate.
+
+This will help facilitate the development of new features and fixes.
+
+
+- Ko-fi : https://ko-fi.com/hinatyustudio
+- BTC : 32J66dfWi9dqqWHS2RYR9rFCUNBL88vgUR
+- ETH : 0xaE5D5b3e8E865B2bA676a24eF41d5f4CBD315978.
+
+
+----------
+
+
+[ Custom GSC ( gsc-tool ) ]
+
+
+< dump >
+
+* A "GSCBIN" folder containing the gscbin for iw9 needs to be placed in the same directory hierarchy as gsc-tool_iw9beta.exe.
+
+gsc-tool_iw9beta -m decomp -g iw9 -s pc GSCBIN
+
+
+< compile >
+
+* A folder containing the custom GSC source for iw9 needs to be placed in the same directory hierarchy as gsc-tool_iw9beta.exe.
+
+gsc-tool_iw9beta -m comp -g iw9 -s pc YourCustomGSCFolder
+
+
+You are free to modify the GSC Mod Menu source code I released.
+
+However, I will not provide explanations on how to modify GSC, coding methods, or basic coding knowledge.
+
+Please figure it out on your own.
+
+Currently, the following GSC functions and tokens can be used.
+
+All other commands are almost always incorrect and may cause a crash.
